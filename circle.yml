@@ -1,6 +1,7 @@
 test:
   override:
     - echo $GOPATH
+    - pwd
     - go list ./...
     - go test -v ./...
 

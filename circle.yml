@@ -1,9 +1,6 @@
-dependencies:
-  override:
-    - exit 0
-
 test:
   override:
+    - echo $GOPATH
     - go list ./...
     - go test -v ./...
 
